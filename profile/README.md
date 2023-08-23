@@ -3,7 +3,7 @@
 
 Overmock is a mocking framework in development that allows for creating dynamic proxies that monitor and control expected behavior when writing unit tests. Here are some examples below.
 
-The current goal is refactoring out the dynamic proxy creation into it's own class library to be used by the testing framework. 
+The current goal is optimizing the proxy member delegate compilation in to a few different versions implementations using DynamicMethod and Expressions. Expressions for methods is currently working and in the latest release. Compiling delegates for properties is next then fixing the IL generation for the DynamicMethod delegates. 
 
 ``` C#
 [TestClass]
